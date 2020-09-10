@@ -1,6 +1,6 @@
 import React from "react"
 import Title from "./Title"
-import { FaAngleDoubleRight, FaAlignRight } from "react-icons/fa"
+import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
@@ -55,7 +55,7 @@ const Jobs = () => {
           {desc.map(item => {
             return (
               <div key={item.id} className="job-desc">
-                <FaAlignRight className="job-icon"></FaAlignRight>
+                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
                 <p>{item.name}</p>
               </div>
             )
